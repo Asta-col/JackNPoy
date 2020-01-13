@@ -1,0 +1,11 @@
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\bin\Debug\JackNPoy.exe.config
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\bin\Debug\JackNPoy.exe
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\bin\Debug\JackNPoy.pdb
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\bin\Debug\JackNPoy.xml
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.vbprojAssemblyReference.cache
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.Form1.resources
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.Resources.resources
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.vbproj.GenerateResource.cache
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.exe
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.xml
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.pdb
