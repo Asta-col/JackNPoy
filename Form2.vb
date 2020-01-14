@@ -9,9 +9,6 @@
         PictureBox4.Visible = False
         PictureBox5.Visible = False
         PictureBox6.Visible = False
-
-
-
     End Sub
 
     Private Sub rock_click(sender As Object, e As MouseEventArgs) Handles Panel8.MouseClick
@@ -35,12 +32,14 @@
             '2 = paper; paper vs rock
         ElseIf comp = 2 Then
             PictureBox2.Visible = True
+            PictureBox8.Left += 15
             Label8.Text = "Player 1 Loses"
             losses = losses + 1
 
             '3 = scissor; scissor vs rock
         ElseIf comp = 3 Then
             PictureBox3.Visible = True
+            PictureBox9.Left -= 15
             Label8.Text = "Player 1 Wins"
             wins = wins + 1
         End If
@@ -55,4 +54,82 @@
         Form1.Show()
         Me.Hide()
     End Sub
+
+    Private Sub paper_click(sender As Object, e As MouseEventArgs) Handles Panel7.MouseClick
+        PictureBox1.Visible = False
+        PictureBox2.Visible = False
+        PictureBox3.Visible = False
+        PictureBox4.Visible = False
+        PictureBox5.Visible = True
+        PictureBox6.Visible = False
+
+        Dim rnd As New Random
+        Dim comp As Integer
+        comp = rnd.Next(3) + 1
+
+        '1 = rock; rock vs paper
+        If comp = 1 Then
+            PictureBox1.Visible = True
+            PictureBox9.Left -= 15
+            Label8.Text = "Player 1 Wins"
+            wins = wins + 1
+
+            '2 = paper; paper vs paper
+        ElseIf comp = 2 Then
+            PictureBox2.Visible = True
+            Label8.Text = "It's a tie!"
+            ties = ties + 1
+
+            '3 = scissor; scissor vs paper
+        ElseIf comp = 3 Then
+            PictureBox3.Visible = True
+            PictureBox8.Left += 15
+            Label8.Text = "Player 1 Loses"
+            losses = losses + 1
+        End If
+
+        Label4.Text = wins
+        Label5.Text = losses
+        Label6.Text = ties
+    End Sub
+
+    Private Sub scissor_click(sender As Object, e As MouseEventArgs) Handles Panel6.MouseClick
+        PictureBox1.Visible = False
+        PictureBox2.Visible = False
+        PictureBox3.Visible = False
+        PictureBox4.Visible = False
+        PictureBox5.Visible = False
+        PictureBox6.Visible = True
+
+        Dim rnd As New Random
+        Dim comp As Integer
+        comp = rnd.Next(3) + 1
+
+        '1 = rock; rock vs scissor
+        If comp = 1 Then
+            PictureBox1.Visible = True
+            PictureBox8.Left += 15
+            Label8.Text = "Player 1 Loses"
+            losses = losses + 1
+
+            '2 = paper; paper vs scissor
+        ElseIf comp = 2 Then
+            PictureBox2.Visible = True
+            PictureBox9.Left -= 15
+            Label8.Text = "Player 1 Wins"
+            wins = wins + 1
+
+            '3 = scissor; scissor vs scissor
+        ElseIf comp = 3 Then
+            PictureBox3.Visible = True
+            Label8.Text = "It's a tie!"
+            ties = ties + 1
+        End If
+
+        Label4.Text = wins
+        Label5.Text = losses
+        Label6.Text = ties
+    End Sub
+
+
 End Class
