@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnSingle = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
@@ -38,14 +38,15 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(506, 264)
         Me.Panel1.TabIndex = 0
         '
-        'Panel2
+        'btnSingle
         '
-        Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
-        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel2.Location = New System.Drawing.Point(152, 327)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(221, 56)
-        Me.Panel2.TabIndex = 2
+        Me.btnSingle.BackColor = System.Drawing.Color.White
+        Me.btnSingle.BackgroundImage = CType(resources.GetObject("btnSingle.BackgroundImage"), System.Drawing.Image)
+        Me.btnSingle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSingle.Location = New System.Drawing.Point(152, 327)
+        Me.btnSingle.Name = "btnSingle"
+        Me.btnSingle.Size = New System.Drawing.Size(221, 56)
+        Me.btnSingle.TabIndex = 2
         '
         'Panel3
         '
@@ -73,7 +74,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(530, 559)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.btnSingle)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -85,7 +86,7 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents btnSingle As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel4 As Panel
 End Class
