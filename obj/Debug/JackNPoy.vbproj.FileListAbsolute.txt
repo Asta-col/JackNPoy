@@ -10,3 +10,5 @@ C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.exe
 C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.xml
 C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.pdb
 C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.Form2.resources
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.Form3.resources
+C:\Users\Em Buenaventura\source\repos\JackNPoy\JackNPoy\obj\Debug\JackNPoy.Form4.resources

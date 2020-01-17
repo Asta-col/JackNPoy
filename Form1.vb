@@ -5,6 +5,13 @@
         Me.Hide()
     End Sub
 
+    Private Sub leaderboards_click(sender As Object, e As MouseEventArgs) Handles Panel4.MouseClick
+        Form4.Show()
+        Me.Hide()
+    End Sub
+
+
+
     'Private Sub btnSingle_Hover(sender As Object, e As EventArgs) Handles btnSingle.MouseHover
     '    btnSingle.BackgroundImage = Image.FromFile _
     '    (System.Environment.GetFolderPath _
