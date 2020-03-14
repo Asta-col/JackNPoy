@@ -23,30 +23,20 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnSingle = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.btnSingle = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
-        'Panel1
+        'Panel4
         '
-        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Location = New System.Drawing.Point(12, 12)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(506, 264)
-        Me.Panel1.TabIndex = 0
-        '
-        'btnSingle
-        '
-        Me.btnSingle.BackColor = System.Drawing.Color.White
-        Me.btnSingle.BackgroundImage = CType(resources.GetObject("btnSingle.BackgroundImage"), System.Drawing.Image)
-        Me.btnSingle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnSingle.Location = New System.Drawing.Point(152, 327)
-        Me.btnSingle.Name = "btnSingle"
-        Me.btnSingle.Size = New System.Drawing.Size(221, 56)
-        Me.btnSingle.TabIndex = 2
+        Me.Panel4.BackgroundImage = CType(resources.GetObject("Panel4.BackgroundImage"), System.Drawing.Image)
+        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel4.Location = New System.Drawing.Point(152, 451)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(221, 56)
+        Me.Panel4.TabIndex = 3
         '
         'Panel3
         '
@@ -57,14 +47,24 @@ Partial Class Form1
         Me.Panel3.Size = New System.Drawing.Size(221, 56)
         Me.Panel3.TabIndex = 3
         '
-        'Panel4
+        'btnSingle
         '
-        Me.Panel4.BackgroundImage = CType(resources.GetObject("Panel4.BackgroundImage"), System.Drawing.Image)
-        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel4.Location = New System.Drawing.Point(152, 451)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(221, 56)
-        Me.Panel4.TabIndex = 3
+        Me.btnSingle.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSingle.BackgroundImage = CType(resources.GetObject("btnSingle.BackgroundImage"), System.Drawing.Image)
+        Me.btnSingle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSingle.Location = New System.Drawing.Point(152, 327)
+        Me.btnSingle.Name = "btnSingle"
+        Me.btnSingle.Size = New System.Drawing.Size(221, 56)
+        Me.btnSingle.TabIndex = 2
+        '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Location = New System.Drawing.Point(12, 12)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(506, 264)
+        Me.Panel1.TabIndex = 0
         '
         'Form1
         '
