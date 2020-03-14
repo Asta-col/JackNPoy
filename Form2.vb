@@ -14,9 +14,12 @@
         PictureBox4.Visible = False
         PictureBox5.Visible = False
         PictureBox6.Visible = False
-        Panel4.Visible = False
+
         PictureBox10.Visible = True
         PictureBox11.Visible = True
+        PictureBox13.Visible = False
+        PictureBox14.Visible = False
+        PictureBox15.Visible = False
 
         wins = 0
         losses = 0
@@ -41,11 +44,6 @@
 
         Dim F3 As New Form3
 
-
-        'Dim rndImage As New Random
-        'Dim qImage As Integer
-        'qImage = rndImage.Next(2) + 1
-
         comp = rnd.Next(3) + 1
 
         If wins < 8 And losses < 8 Then
@@ -62,7 +60,7 @@
 
                 '3 = scissor; scissor vs rock
             ElseIf comp = 3 Then
-                Panel4.Visible = True
+                PictureBox13.Visible = True
                 PictureBox3.Visible = True
                 PictureBox9.Left -= 15
                 wins = wins + 1
@@ -75,7 +73,9 @@
             PictureBox4.Visible = False
             PictureBox5.Visible = False
             PictureBox6.Visible = False
-            Panel4.Visible = False
+            PictureBox13.Visible = False
+            PictureBox14.Visible = False
+            PictureBox15.Visible = False
             PictureBox10.Visible = True
             PictureBox11.Visible = True
         Else
@@ -86,7 +86,9 @@
             PictureBox4.Visible = False
             PictureBox5.Visible = False
             PictureBox6.Visible = False
-            Panel4.Visible = False
+            PictureBox13.Visible = False
+            PictureBox14.Visible = False
+            PictureBox15.Visible = False
             PictureBox10.Visible = True
             PictureBox11.Visible = True
         End If
@@ -115,6 +117,7 @@
         If wins < 8 And losses < 8 Then
             '1 = rock; rock vs paper
             If comp = 1 Then
+                PictureBox14.Visible = True
                 PictureBox1.Visible = True
                 PictureBox9.Left -= 15
                 wins = wins + 1
@@ -138,7 +141,9 @@
             PictureBox4.Visible = False
             PictureBox5.Visible = False
             PictureBox6.Visible = False
-            Panel4.Visible = False
+            PictureBox13.Visible = False
+            PictureBox14.Visible = False
+            PictureBox15.Visible = False
             PictureBox10.Visible = True
             PictureBox11.Visible = True
         Else
@@ -149,7 +154,9 @@
             PictureBox4.Visible = False
             PictureBox5.Visible = False
             PictureBox6.Visible = False
-            Panel4.Visible = False
+            PictureBox13.Visible = False
+            PictureBox14.Visible = False
+            PictureBox15.Visible = False
             PictureBox10.Visible = True
             PictureBox11.Visible = True
 
@@ -185,6 +192,7 @@
 
                 '2 = paper; paper vs scissor
             ElseIf comp = 2 Then
+                PictureBox15.Visible = True
                 PictureBox2.Visible = True
                 PictureBox9.Left -= 15
                 wins = wins + 1
@@ -202,7 +210,9 @@
             PictureBox4.Visible = False
             PictureBox5.Visible = False
             PictureBox6.Visible = False
-            Panel4.Visible = False
+            PictureBox13.Visible = False
+            PictureBox14.Visible = False
+            PictureBox15.Visible = False
             PictureBox10.Visible = True
             PictureBox11.Visible = True
         Else
@@ -213,7 +223,9 @@
             PictureBox4.Visible = False
             PictureBox5.Visible = False
             PictureBox6.Visible = False
-            Panel4.Visible = False
+            PictureBox13.Visible = False
+            PictureBox14.Visible = False
+            PictureBox15.Visible = False
             PictureBox10.Visible = True
             PictureBox11.Visible = True
         End If
@@ -222,11 +234,7 @@
         Label10.Text = losses
     End Sub
 
-    Private Sub Panel4_MouseClick(sender As Object, e As MouseEventArgs) Handles Panel4.MouseClick
 
-        Form5.Show()
-        Panel4.Visible = False
-    End Sub
 
     Private Sub home_click(sender As Object, e As MouseEventArgs) Handles Panel3.MouseClick
         Form1.Show()
@@ -237,7 +245,9 @@
         PictureBox4.Visible = False
         PictureBox5.Visible = False
         PictureBox6.Visible = False
-        Panel4.Visible = False
+        PictureBox13.Visible = False
+        PictureBox14.Visible = False
+        PictureBox15.Visible = False
         PictureBox10.Visible = True
         PictureBox11.Visible = True
 
@@ -253,5 +263,18 @@
         PictureBox9.Location = New Point(375, 3)
     End Sub
 
+    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
+        Form5.Show()
+        PictureBox13.Visible = False
+    End Sub
 
+    Private Sub PictureBox14_MouseClick(sender As Object, e As MouseEventArgs) Handles PictureBox14.MouseClick
+        Form7.Show()
+        PictureBox14.Visible = False
+    End Sub
+
+    Private Sub PictureBox15_MouseClick(sender As Object, e As MouseEventArgs) Handles PictureBox15.MouseClick
+        Form8.Show()
+        PictureBox15.Visible = False
+    End Sub
 End Class

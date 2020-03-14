@@ -30,4 +30,5 @@
         Form2.ties = 0
         Form2.score = 0
     End Sub
+
 End Class
